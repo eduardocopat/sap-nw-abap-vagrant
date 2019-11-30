@@ -28,16 +28,15 @@ See detailed setup below.
 Before installing vagrant, you will need to make sure Virtualization and Hyper-V are enabled in your computer. You can follow [this guide](https://mashtips.com/enable-virtualization-windows-10/) to enable it. Then:
 
 - Install [vagrant](https://www.vagrantup.com/).
-- Check You will probably need to restart your computer.
-
+- You will probably need to restart your computer.
 - Install disk size plugin by opening your terminal (in Windows <kbd>Win</kbd>+<kbd>X</kbd> then <kbd>I</kbd>): 
   - `vagrant plugin install vagrant-disksize`
 
 
 ### 3 - Download ABAP on vagrant latest release
 
-- Download [ABAP on vagrant latest release](https://github.com/EduardoCopat/sap-nw-abap-vagrant/releases) and download latest zip. 
-- Extract the zip (recommended: `C:/vagrant-netweaver`). 
+- Go to [ABAP on vagrant latest release](https://github.com/EduardoCopat/sap-nw-abap-vagrant/releases) and download the latest zip. 
+- Extract the zip (recommended folder: `C:/vagrant-netweaver`). 
 
 ### 4 - Download and extract NetWeaver trial
 
@@ -64,7 +63,7 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
 ### 7 - Connect to your SAP system via SAP Logon
 
 - Open SAP Logon
-  > If you don't have SAP logon, you need an S-User to download it: https://launchpad.support.sap.com/#/softwarecenter. Alternatively, connect with Abap Development Tools.
+  > If you don't have SAP logon, you need an S-User to download it: https://launchpad.support.sap.com/#/softwarecenter. Alternatively, connect with ABAP Development Tools.
 - Click to add a new system:
     - Connection type: `Custom application server`
     - Description: `NPL`
@@ -73,7 +72,7 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
     - System ID: `NPL`
     - SAPRouter String: empty
 
-- Follow the [post-installation steps](https://blogs.sap.com/2016/11/03/sap-nw-as-abap-7.50-sp2-developer-edition-to-download-consise-installation-guide/).
+- Follow the [post-installation steps](https://blogs.sap.com/2016/11/03/sap-nw-as-abap-7.50-sp2-developer-edition-to-download-consise-installation-guide/) to register your SAP developer license.
 
 You can find the user list at `/NW/readme.html`:
 
