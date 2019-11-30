@@ -78,20 +78,13 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
 You can find the user list at `/NW/readme.html`:
 
 | username  | client(s)  |  password  | description   | 
-|---|---|---|---|---|
+|---|---|---|---|
 | DEVELOPER  | 001  |  Down1oad |  Developer User |   
 |  BWDEVELOPER |  001 | Down1oad  | Developer User  |   
 | DDIC  |  000/001 | Down1oad  | Data Dictionary User  |   
 | SAP*  | 000/001  | Down1oad  |  SAP Administrator |   
 
 Login with DEVELOPER.
-
-			
-		Down1oad	Developer User
-		Down1oad	Developer User
-		Down1oad	Data Dictionary User
-		Down1oad	SAP Administrator
-
 
 ## Running again
 
