@@ -1,19 +1,19 @@
 # SAP NetWeaver ABAP running on vagrant
 
-
 SAP NetWeaver ABAP running on vagrant.
 
 This automates the steps listed on [the SAP post](https://blogs.sap.com/2017/09/04/newbies-guide-installing-abap-as-751-sp02-on-linux/).
 
 ### Prerequisites
 
-- 120GB hard disk space for installation and setup files (After that, the virtual Machine will occupy ~XXGB).
-- 16GB RAM.
+- 50GB hard disk space for installation and setup files.
+- 8GB RAM (16GB recommended).
 - A motherboard which allows Virtualization.
 - VirtualBox (6.0.14+).
 - Vagrant (2.2.6+).
 - SAP NetWeaver trial (7.52 SP04+).
 - Windows 10 (It probably works on Linux, but this guide focus on Windows).
+- Time. Downloading and installing takes a few minutes.
 
 See detailed setup below.
 
@@ -58,7 +58,7 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
 ### 6 - Install Netweaver
 
 - Run `./nw_install.sh`. This may take a few minutes. It will automatically accept SAP license and programatically install SAP NetWeaver.
-> If the screens stops output in PowerShell, click <kbd>Enter</kbd> to resume.
+> If the screen stops output in PowerShell, click <kbd>Enter</kbd> to resume.
 - The last message you should see is `Installation of NPL successful`.
 
 ### 7 - Connect to your SAP system via SAP Logon
@@ -66,8 +66,32 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
 - Open SAP Logon
   > If you don't have SAP logon, you need an S-User to download it: https://launchpad.support.sap.com/#/softwarecenter. Alternatively, connect with Abap Development Tools.
 - Click to add a new system:
+    - Connection type: `Custom application server`
+    - Description: `NPL`
+    - Application server: `localhost`
+    - Instance Number: `00`
+    - System ID: `NPL`
+    - SAPRouter String: empty
 
-TBD
+- Follow the [post-installation steps](https://blogs.sap.com/2016/11/03/sap-nw-as-abap-7.50-sp2-developer-edition-to-download-consise-installation-guide/).
+
+You can find the user list at `/NW/readme.html`:
+
+| username  | client(s)  |  password  | description   | 
+|---|---|---|---|---|
+| DEVELOPER  | 001  |  Down1oad |  Developer User |   
+|  BWDEVELOPER |  001 | Down1oad  | Developer User  |   
+| DDIC  |  000/001 | Down1oad  | Data Dictionary User  |   
+| SAP*  | 000/001  | Down1oad  |  SAP Administrator |   
+
+Login with DEVELOPER.
+
+			
+		Down1oad	Developer User
+		Down1oad	Developer User
+		Down1oad	Data Dictionary User
+		Down1oad	SAP Administrator
+
 
 ## Running again
 
@@ -76,8 +100,8 @@ In case you stopped your VM or rebooted your computer. Start again by:
 - Run `sudo su`
 - Run `./run.sh`
 
-### Credits
+## Credits
 
-[Docker](https://github.com/tobiashofmann/sap-nw-abap-docker)
+Based on Tobias Hofmann's [sap-nw-abap-docker](https://github.com/tobiashofmann/sap-nw-abap-docker).
 
 
