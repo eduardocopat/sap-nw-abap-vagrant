@@ -100,5 +100,3 @@ In case you stopped your VM or rebooted your computer. Start again by:
 ## Credits
 
 Based on Tobias Hofmann's [sap-nw-abap-docker](https://github.com/tobiashofmann/sap-nw-abap-docker).
-
-
