@@ -48,7 +48,7 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
 
 ### 5 - Start your Virtual Machine with vagrant
 
-- Open the terminal and go to your folder (e.g. `cd C:\git\sap-nw-abap-vagrant\`)
+- Open the terminal and go to your folder (e.g. `cd C:\git\sap-nw-abap-vagrant\`).
 - Run `vagrant up`. This will download an Ubuntu VM ([bionic64](https://app.vagrantup.com/hashicorp)).
 - Run `vagrant ssh` to connect to Vagrant VM.
 - Run `sudo su` to get root priviliges.
@@ -73,9 +73,7 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
     - System ID: `NPL`
     - SAPRouter String: empty
 
-- Follow the [post-installation steps](https://blogs.sap.com/2016/11/03/sap-nw-as-abap-7.50-sp2-developer-edition-to-download-consise-installation-guide/).
-
-You can find the user list at `/NW/readme.html`:
+- You can find the user list at `/NW/readme.html`:
 
 | username  | client(s)  |  password  | description   | 
 |---|---|---|---|---|
@@ -84,21 +82,20 @@ You can find the user list at `/NW/readme.html`:
 | DDIC  |  000/001 | Down1oad  | Data Dictionary User  |   
 | SAP*  | 000/001  | Down1oad  |  SAP Administrator |   
 
-Login with DEVELOPER.
 
-			
-		Down1oad	Developer User
-		Down1oad	Developer User
-		Down1oad	Data Dictionary User
-		Down1oad	SAP Administrator
+
+- Follow the items 3 to 6 in [post-installation steps. Start at "ABAP License Key"](https://blogs.sap.com/2016/11/03/sap-nw-as-abap-7.50-sp2-developer-edition-to-download-consise-installation-guide/). Note that the password to login is Down1oad.
+
 
 
 ## Running again
 
 In case you stopped your VM or rebooted your computer. Start again by:
+- Run `vagrant up`.
 - Connect using `vagrant ssh`.
-- Run `sudo su`
-- Run `./run.sh`
+- Run `sudo su`.
+- Run `cd /vagrant`.
+- Run `./run.sh`.
 
 ## Credits
 
