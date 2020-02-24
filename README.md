@@ -75,18 +75,14 @@ Before installing vagrant, you will need to make sure Virtualization and Hyper-V
 
 - You can find the user list at `/NW/readme.html`:
 
-| username  | client(s)  |  password  | description   | 
-|---|---|---|---|---|
+|Username|Client(s)|Password|Description| 
+|---|---|---|---|
 | DEVELOPER  | 001  |  Down1oad |  Developer User |   
 |  BWDEVELOPER |  001 | Down1oad  | Developer User  |   
-| DDIC  |  000/001 | Down1oad  | Data Dictionary User  |   
+| DDIC  |  000/001 | Down1oad  | Data Dictionary User  |  
 | SAP*  | 000/001  | Down1oad  |  SAP Administrator |   
 
-
-
 - Follow the items 3 to 6 in [post-installation steps. Start at "ABAP License Key"](https://blogs.sap.com/2016/11/03/sap-nw-as-abap-7.50-sp2-developer-edition-to-download-consise-installation-guide/). Note that the password to login is Down1oad.
-
-
 
 ## Running again
 
