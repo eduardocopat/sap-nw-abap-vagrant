@@ -93,6 +93,10 @@ In case you stopped your VM or rebooted your computer. Start again by:
 - Run `cd /vagrant`.
 - Run `./run.sh`.
 
+## Stopping
+
+- Run `./stop.sh`
+
 ## Credits
 
 Based on Tobias Hofmann's [sap-nw-abap-docker](https://github.com/tobiashofmann/sap-nw-abap-docker).

@@ -23,6 +23,9 @@ chmod +rwx -R ./NW
 chmod u+x ./run.sh
 dos2unix ./run.sh
 
+chmod u+x ./stop.sh
+dos2unix ./stop.sh
+
 #Set the hostname IP in /etc/hosts
 cat /etc/hosts | sed "s/127.0.1.1/$(hostname -I|cut -d" " -f 1)/g" > /etc/hosts
 
